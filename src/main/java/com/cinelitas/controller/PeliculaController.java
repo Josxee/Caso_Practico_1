@@ -37,7 +37,7 @@ public class PeliculaController {
         model.addAttribute("salas", listaSalas);
         return "crear";
     }
-    
+
     @GetMapping("/delete/{id}")
     public String eliminarPelicula(@PathVariable("id") Long idPelicula){
         peliculaService.delete(idPelicula);
